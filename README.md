@@ -1,32 +1,25 @@
 1.crear una entrada HTML que le pregunte por su nombre. Una vez que introduzca su nombre, se envía al DOM como un h1 elemento.<BR>
 2.ejemplo-sencilla: hay muchos medidas buscar su valore dentro de "#fname" en forms.html. Este tiempos, sigue el "e" pasado de handleChange(e). El "e" es el evento, siguelo en su Developer Tools -> Console -> e->target->childNodes[1].value<br>
-  Event {isTrusted: true, type: "submit", target: form#f, currentTarget: form#f, eventPhase: 2, …}
-bubbles: true
-cancelBubble: false
-cancelable: true
-composed: false
+  Event {isTrusted: true, type: "submit", target: form#f, currentTarget: form#f, eventPhase: 2, …}<br>
+bubbles: true<br>
+cancelBubble: false<br>
+cancelable: true<br>
+composed: false<br>
 currentTarget: null
-defaultPrevented: true
-eventPhase: 0
-isTrusted: true
-path: (5) [form#f, body, html, document, Window]
-returnValue: false
-srcElement: form#f
-  <strong>target: form#f</strong>
-0: input#fname
-  <strong>1: input</strong>
-acceptCharset: ""
-accessKey: ""
-action: "http://127.0.0.1:5500/form.html?fname=#"
-assignedSlot: null
-attributeStyleMap: StylePropertyMap {size: 0}
-attributes: NamedNodeMap {0: id, 1: action, id: id, action: action, length: 2}
-autocapitalize: ""
-autocomplete: "on"
-baseURI: "http://127.0.0.1:5500/form.html?fname=#"
+defaultPrevented: true<br>
+eventPhase: 0<br>
+isTrusted: true<br>
+path: (5) [form#f, body, html, document, Window]<br>
+returnValue: false<br>
+srcElement: form#f<br>
+  <strong>target: form#f</strong><br>
+0: input#fname<br>
+  <strong>1: input</strong><br>
+
 childElementCount: 2
-childNodes: NodeList(5)
-0: text
+  <br><strong>childNodes: NodeList(5)</strong><br>
+0: text<br>
+ 1: input#fname<br>
 <br>
   ...snip
 
