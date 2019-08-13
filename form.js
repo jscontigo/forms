@@ -1,9 +1,14 @@
-function logSubmit(event ){
-    ahorita = new Date();
-    event.preventDefault();
-    hola.textContent  = `${event.target.childNodes[1].value} lo subido son las ${ahorita} `; 
-}
+let form = document.querySelector('form')
 
-let hola = document.querySelector('div#hola');
-let form = document.querySelector('#f');
-form.addEventListener('submit', logSubmit);
+form.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    console.log(e);
+    let nivel = document.querySelectorAll("input#nivel");
+    console.log(typeof nivel);
+    console.log(nivel);
+    nivel.forEach((n)=>{
+        n.checked ? 
+        (document.querySelector('#sunivel').innerHTML = " " +n.value, console.log(`su nivel es ${n.value}`)) 
+        : console.log(`su nivel no es ${n.value}`)
+    })
+});
