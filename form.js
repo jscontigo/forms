@@ -1,13 +1,9 @@
-let f = document.querySelector('#f');
-f.onsubmit = handleChange;
-
-function handleChange(e){
-    //prevent submitting
-    e.preventDefault();
-    console.log(`me llamo ${e.target.childNodes[1].value}`);
-    let hola = document.querySelector('#hola');
-    hola.innerHTML = '';
-    let h1 = document.createElement('h1');
-    h1.appendChild(document.createTextNode('hola ' + e.target.childNodes[1].value))
-    hola.appendChild(h1);
+function logSubmit(event ){
+    ahorita = new Date();
+    event.preventDefault();
+    hola.textContent  = `${event.target.childNodes[1].value} lo subido son las ${ahorita} `; 
 }
+
+let hola = document.querySelector('div#hola');
+let form = document.querySelector('#f');
+form.addEventListener('submit', logSubmit);
